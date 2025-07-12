@@ -19,7 +19,7 @@ const handleSelectAddress = (selectedAddress) => {
   useEffect(() => {
     const fetchaddresses = async () => {
       try {
-        const res = await fetch("http://localhost:5000/api/addresses", {
+        const res = await fetch("http://https://agritech-backend-o5e8.onrender.com/api/addresses", {
           credentials: "include",
         });
         const data = await res.json(); // ✅ await this!
@@ -39,7 +39,7 @@ const handleSelectAddress = (selectedAddress) => {
   const handlesubmit = async (e) => {
     e.preventDefault(); // ✅ Corrected: use `preventDefault()` not `preventdefault()`
     try {
-      const res = await fetch("http://localhost:5000/api/addresses", {
+      const res = await fetch("http://https://agritech-backend-o5e8.onrender.com/api/addresses", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         credentials: "include",
