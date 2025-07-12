@@ -38,7 +38,7 @@ export default function SellForm({ goBack }) {
 
     try {
       setLoading(true);
-      const res = await fetch("http://localhost:5000/api/sell", {
+      const res = await fetch("http://https://agritech-backend-o5e8.onrender.com/api/sell", {
         method: "POST",
         credentials: "include",
         body: formData,
