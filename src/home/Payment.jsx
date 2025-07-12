@@ -20,7 +20,7 @@ export default function Payment() {
 
     setLoading(true);
     try {
-      const res = await fetch("http://localhost:5000/api/orders", {
+      const res = await fetch("http://https://agritech-backend-o5e8.onrender.com/api/orders", {
         method: "POST",
         credentials: "include",
         headers: { "Content-Type": "application/json" },
