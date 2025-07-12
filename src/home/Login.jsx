@@ -15,7 +15,7 @@ function Login() {
 
     try {
       setLoading(true);
-      const response = await fetch("http://localhost:5000/login", {
+      const response = await fetch("http://https://agritech-backend-o5e8.onrender.com/login", {
         method: "POST",
         headers: {
           "content-type": "application/json",
