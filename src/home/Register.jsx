@@ -16,7 +16,7 @@ function Register() {
 
     try {
       setLoading(true);
-      const response = await fetch("http://localhost:5000/register", {
+      const response = await fetch("http://https://agritech-backend-o5e8.onrender.com/register", {
         method: "POST",
         headers: {
           "Content-type": "application/json",
