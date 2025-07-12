@@ -8,7 +8,7 @@ export default function You() {
   useEffect(() => {
     const fetchUser = async () => {
       try {
-        const res = await fetch("http://localhost:5000/api/user", {
+        const res = await fetch("http://https://agritech-backend-o5e8.onrender.com/api/user", {
           credentials: "include",
         });
 
