@@ -9,7 +9,7 @@ function Cart() {
   useEffect(() => {
     const fetchCart = async () => {
       try {
-        const res = await fetch("http://localhost:5000/api/cart", {
+        const res = await fetch("http://https://agritech-backend-o5e8.onrender.com/api/cart", {
             credentials: "include", // ✅ needed for sessions
         });
         const data = await res.json();
@@ -35,7 +35,7 @@ function Cart() {
   };
 const handleRemove = async (productId) => {
   try {
-    const res = await fetch(`http://localhost:5000/api/cart/${productId}`, {
+    const res = await fetch(`http://https://agritech-backend-o5e8.onrender.com/api/cart/${productId}`, {
       method: "DELETE",
       credentials: "include",
     });
