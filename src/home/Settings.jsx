@@ -10,7 +10,7 @@ export default function Settings() {
   useEffect(() => {
     const fetchSettings = async () => {
       try {
-        const res = await fetch("http://localhost:5000/api/user", {
+        const res = await fetch("http://https://agritech-backend-o5e8.onrender.com/api/user", {
           credentials: "include",
         });
 
@@ -44,7 +44,7 @@ export default function Settings() {
   // Save settings
   const handleSave = async () => {
     try {
-      const res = await fetch("http://localhost:5000/api/settings", {
+      const res = await fetch("http://https://agritech-backend-o5e8.onrender.com/api/settings", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
