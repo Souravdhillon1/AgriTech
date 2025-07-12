@@ -16,7 +16,7 @@ function ResetPassword(){
             return
         }
         try {
-            const res=await fetch("http://localhost:5000/api/reset-password",{
+            const res=await fetch("http://https://agritech-backend-o5e8.onrender.com/api/reset-password",{
                 method:"POST",
                 headers:{
                     "Content-Type":"application/json"
