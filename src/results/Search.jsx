@@ -13,7 +13,7 @@ function Search() {
       if (!query) return;
       try {
         const res = await fetch(
-          `http://localhost:5000/api/search?query=${encodeURIComponent(query)}`
+          `http://https://agritech-backend-o5e8.onrender.com/api/search?query=${encodeURIComponent(query)}`
         );
         const data = await res.json();
         setProducts(data);
@@ -27,7 +27,7 @@ function Search() {
   /** ② simple cart handler (replace with your own Redux / Context / API call) */
   const handleAddToCart = async (product) => {
     try {
-      await fetch("http://localhost:5000/api/cart", {
+      await fetch("http://https://agritech-backend-o5e8.onrender.com/api/cart", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ productId: product._id, quantity: 1 }),
