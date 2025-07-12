@@ -7,7 +7,7 @@ function ForgotPassword(){
     const[message,setmessage]=useState("")
     const handlesubmit=async()=>{
         try {
-            const res=await fetch("http://localhost:5000/api/forgot-password",{
+            const res=await fetch("http://https://agritech-backend-o5e8.onrender.com/api/forgot-password",{
                 method:"POST",
                 headers:{"Content-Type":"application/json"},
                 body:JSON.stringify({email})
